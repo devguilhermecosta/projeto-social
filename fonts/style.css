@@ -42,7 +42,8 @@ html {
 }
 
 .img-frame {
-    max-width: 40vh;
+    min-width: 100px;
+    max-width: 35vh;
     max-height: auto;
 }
 
@@ -53,6 +54,25 @@ html {
 }
 
 .img-menu {
-    max-width: 50px;
+    width: 80px;
     border-radius: 50%;
+    transition: all 100ms ease-in-out;
+}
+
+.img-menu:hover {
+    transform: scale(1.2);
+}
+
+/* Adicionar media query para o frame do telefone e fazer o hover do img-menu em java script pata treinar*/
+
+@media (min-width: 280px) and (max-width: 590px) {
+    .img-menu {
+        width: 10vw;
+    }
+}
+
+@media (min-width: 591px) and (max-width: 1024px) {
+    .img-menu {
+        width: 8vw;
+    }
 }
