@@ -10,10 +10,49 @@ html {
     font-size: 62.5%;
 }
 
-.body-img {
+.grid {
+    display: grid;
+    grid-template-columns: 85% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "conteudo cabecalho";
     background-image: url('../imagens/fundo-madeira.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 25px;
+    padding-right: 15px;
+    z-index: 1;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-frame {
+    max-width: 40vh;
+    max-height: auto;
+}
+
+.lista-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img-menu {
+    max-width: 50px;
+    border-radius: 50%;
 }
