@@ -17,6 +17,8 @@ html {
     grid-template-areas:
     "conteudo cabecalho";
     background-image: url('../imagens/fundo-madeira.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -61,6 +63,24 @@ html {
 
 .img-menu:hover {
     transform: scale(1.2);
+}
+
+.container-iframe{
+    position: relative;
+}
+
+.conteudo-iframe {
+    display: inline;
+    position: absolute;
+    max-width: 86%;
+    height: 75.9%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-iframe {
+    z-index: 1;
 }
 
 /* Adicionar media query para o frame do telefone e fazer o hover do img-menu em java script pata treinar*/
